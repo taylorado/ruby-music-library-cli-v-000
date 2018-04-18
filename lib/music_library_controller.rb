@@ -95,7 +95,7 @@ class MusicLibraryController
    puts "Which song number would you like to play?"
    song_number = (gets.chomp.to_i - 1)
    if song_number <= Song.all.count
-     puts "Playing #{}."
+     puts "Playing #{Song.all.count}."
    else
 
    end
