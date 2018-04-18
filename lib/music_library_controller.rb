@@ -38,8 +38,8 @@ class MusicLibraryController
        list_songs_by_genre
      when "play song"
        play_song
-     when "exit"
-       puts "Welcome to your music library!"
+     #when "exit"
+      # puts "Welcome to your music library!"
      else
       # puts "I don't understand.  Please try again."
        #welcome_instructions
