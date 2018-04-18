@@ -5,4 +5,13 @@ class MusicImporter
     @path = path
   end
 
+  def files
+    files = []
+
+  end
+
+  def import
+
+  end
+
 end
