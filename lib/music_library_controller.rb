@@ -94,7 +94,7 @@ class MusicLibraryController
  def play_song
    puts "Which song number would you like to play?"
    song_number = (gets.chomp.to_i - 1)
-   if song_number <= Song.all.count
+   if song_number <= count(Song.all)
      puts "Playing #{}."
    else
 
