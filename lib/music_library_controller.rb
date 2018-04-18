@@ -47,17 +47,17 @@ class MusicLibraryController
  end
  end
 
- def list_songs
-   Song.all.each_with_index do |song, index|
-     puts "#{index+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
-   end
- end
+# def list_songs
+#   Song.all.each_with_index do |song, index|
+#     puts "#{index+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+#   end
+# end
 
- def list_artists
-   Artist.all.each_with_index do |artist, index|
-      puts "#{index+1}. #{artist.name}"
-    end
- end
+# def list_artists
+#   Artist.all.each_with_index do |artist, index|
+#      puts "#{index+1}. #{artist.name}"
+#    end
+# end
 
  def list_genres
 
