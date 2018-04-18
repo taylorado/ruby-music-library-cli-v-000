@@ -7,7 +7,7 @@ class MusicImporter
 
   def files
     files = []
-    Dir.entries(path).select{ |file| file.end_with?(".mp3") }.sort()
+    Dir.entries(path).select{ |file| file.end_with?(".mp3") }
 
   end
 
