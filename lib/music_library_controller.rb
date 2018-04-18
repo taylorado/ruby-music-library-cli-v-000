@@ -17,7 +17,7 @@ class MusicLibraryController
     puts "To play a song, enter 'play song'."
     puts "To quit, type 'exit'."
   end
-  
+
 
   def call
     welcome
