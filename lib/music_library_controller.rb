@@ -7,7 +7,7 @@ class MusicLibraryController
     music.import
   end
 
-  def call
+  def Welcome
     puts "Welcome to your music library!"
     puts "To list all of your songs, enter 'list songs'."
     puts "To list all of the artists in your library, enter 'list artists'."
@@ -16,6 +16,11 @@ class MusicLibraryController
     puts "To list all of the songs of a particular genre, enter 'list genre'."
     puts "To play a song, enter 'play song'."
     puts "To quit, type 'exit'."
+  end
+  
+
+  def call
+    welcome
    input = ""
    while input != "exit"
      puts "What would you like to do?"
@@ -34,7 +39,7 @@ class MusicLibraryController
      when "play song"
        play_song
      when "exit"
-       puts "Adios, amigo."
+       puts "See ya."
      else
        puts "I don't understand.  Please try again."
    end
