@@ -76,8 +76,8 @@ class MusicLibraryController
      Artist.find_by_name(artist_selection).songs.sort.each_with_index do |song, index|
      puts "#{index+1}. #{song.name} - #{song.genre}"
       end
-  else
-   puts "No such artist."
+#  else
+#   puts "No such artist."
   end
  end
 
