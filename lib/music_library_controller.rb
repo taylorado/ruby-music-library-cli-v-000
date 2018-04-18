@@ -41,11 +41,6 @@ class MusicLibraryController
        list_songs_by_genre
      when "play song"
        play_song
-     #when "exit"
-      # welcome_instructions
-     else
-      # puts "I don't understand.  Please try again."
-       #welcome_instructions
    end
  end
  end
