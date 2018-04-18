@@ -72,12 +72,13 @@ class MusicLibraryController
    puts "Please enter the name of an artist:"
    artist_selection = gets.chomp
 
-   if Artist.find_by_name(artist_selection)
+  if Artist.find_by_name(artist_selection)
      Artist.find_by_name(artist_selection).songs.sort.each_with_index do |song, index|
      puts "#{index+1}. #{song.name} - #{song.genre}"
       end
- else
+  else
    puts "No such artist."
+  end
  end
 
  def list_songs_by_genre
