@@ -7,4 +7,12 @@ class MusicLibraryController
     music.import
   end
 
+  def call
+   input = ""
+   while input != "exit"
+     puts "What do you want to do?"
+     input = gets.chomp
+   end
+ end
+
 end
