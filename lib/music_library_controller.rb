@@ -39,7 +39,7 @@ class MusicLibraryController
      when "play song"
        play_song
      when "exit"
-       puts "See ya."
+       puts "Welcome to your music library!"
      else
        puts "I don't understand.  Please try again."
        welcome_instructions
