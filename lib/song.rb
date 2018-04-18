@@ -9,4 +9,10 @@ class Song
     self.genre = genre unless genre=nil
   end
 
+  def self.all
+    @@all
+  end
+
+  
+
 end
