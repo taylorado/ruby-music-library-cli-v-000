@@ -66,7 +66,9 @@ class MusicLibraryController
  end
 
  def list_songs_by_artists
-
+   puts "Please choose an artist:"
+   list_artists
+   artist_selection = gets.chomp
  end
 
  def list_songs_by_genre
