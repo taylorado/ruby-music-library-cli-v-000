@@ -8,4 +8,5 @@ class Song
     self.artist = artist unless artist=nil
     self.genre = genre unless genre=nil
   end
-  
+
+end
