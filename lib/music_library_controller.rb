@@ -20,7 +20,49 @@ class MusicLibraryController
    while input != "exit"
      puts "What would you like to do?"
      input = gets.chomp
+     case input
+     when "list songs"
+       list_songs
+     when "list artists"
+       list_artists
+     when "list genres"
+       list_genres
+     when "list artist"
+       list_artist
+     when "list genre"
+       list_genre
+     when "play song"
+       play_song
+     when "exit"
+       puts "Adios, amigo."
+     else
+       puts "I don't understand.  Please try again."
    end
  end
+
+ def list_songs
+
+ end
+
+ def list_artists
+
+ end
+
+ def list_genres
+
+ end
+
+ def list_artists
+
+ end
+
+ def list_genres
+
+ end
+
+ def play_song
+
+ end
+
 
 end
