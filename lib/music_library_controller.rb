@@ -42,7 +42,7 @@ class MusicLibraryController
      when "play song"
        play_song
      #when "exit"
-      # puts "Welcome to your music library!"
+      # welcome_instructions
      else
       # puts "I don't understand.  Please try again."
        #welcome_instructions
@@ -74,7 +74,7 @@ class MusicLibraryController
 
   if Artist.find_by_name(artist_selection) != nil
      Artist.find_by_name(artist_selection).songs.sort_by{|song|song.name}.each_with_index do |song, index|
-     puts "#{index+1}. #{song.name} - #{song.genre}"
+     puts "#{index+1}. #{song.name} - #{song.genre.name}"
       end
 #  else
 #   puts "No such artist."
@@ -86,7 +86,7 @@ class MusicLibraryController
    genre_selection = gets.chomp
    if Genre.find_by_name(genre_selection) != nil
    Genre.find_by_name(genre_selection).songs.sort_by{|song|song.name}.each_with_index do |song, index|
-   puts "#{index+1}. #{song.artist} - #{song.name}"
+   puts "#{index+1}. #{song.artist.name} - #{song.name}"
  end
  end
  end
