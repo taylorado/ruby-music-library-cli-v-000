@@ -96,7 +96,7 @@ class MusicLibraryController
    song_number = (gets.chomp.to_i + 1)
    chosen_song = Song.all.sort_by{|song|song.name}[song_number]
    puts "Playing #{chosen_song.name} by #{chosen_song.artist.name}."
-   
+
  end
 
 
