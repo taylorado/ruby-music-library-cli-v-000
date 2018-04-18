@@ -1,6 +1,9 @@
 class MusicLibraryController
   attr_accessor :path
 
+  extend Concerns::Findable
+  extend Concerns::Findable::ClassMethods
+
   def initialize(path="./db/mp3s")
     @path = path
     music = MusicImporter.new(path)
