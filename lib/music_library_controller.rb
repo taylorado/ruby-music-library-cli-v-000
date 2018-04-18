@@ -18,7 +18,7 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
    input = ""
    while input != "exit"
-     puts "What do you want to do?"
+     puts "What would you like to do?"
      input = gets.chomp
    end
  end
