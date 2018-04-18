@@ -65,11 +65,11 @@ class MusicLibraryController
     end
  end
 
- def list_artists
+ def list_songs_by_artists
 
  end
 
- def list_genres
+ def list_songs_by_genre
 
  end
 
